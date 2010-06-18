@@ -6,6 +6,7 @@ module Castronaut
         when "development" : Castronaut::Adapters::Development::Adapter
         when "ldap" : Castronaut::Adapters::Ldap::Adapter
         when "database" : Castronaut::Adapters::RestfulAuthentication::Adapter
+        when "authlogic" : Castronaut::Adapters::Authlogic::Adapter
       end
     end
     

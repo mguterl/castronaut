@@ -94,6 +94,12 @@ module Castronaut
       elsif cas_adapter['adapter'] == "development"
         Castronaut::Adapters::Development::User.establish_connection(cas_adapter['database'])
         Castronaut::Adapters::Development::User.logger = logger
+      elsif cas_adapter['adapter'] == "authlogic"
+        Castronaut::Adapters::Authlogic::User.establish_connection(cas_adapter['database'])
+        Castronaut::Adapters::Authlogic::User.logger = logger
+        Castronaut::Adapters::Authlogic::User.class_eval do
+          acts_as_authentic
+        end
       end
 
       unless ENV["test"] == "true"

@@ -22,6 +22,8 @@ require File.expand_path(File.join(File.dirname(__FILE__), 'castronaut', 'adapte
 require File.expand_path(File.join(File.dirname(__FILE__), 'castronaut', 'adapters', 'development', 'user'))
 require File.expand_path(File.join(File.dirname(__FILE__), 'castronaut', 'adapters', 'ldap', 'adapter'))
 require File.expand_path(File.join(File.dirname(__FILE__), 'castronaut', 'adapters', 'ldap', 'user'))
+require File.expand_path(File.join(File.dirname(__FILE__), 'castronaut', 'adapters', 'authlogic', 'adapter'))
+require File.expand_path(File.join(File.dirname(__FILE__), 'castronaut', 'adapters', 'authlogic', 'user'))
 
 module Castronaut
 
